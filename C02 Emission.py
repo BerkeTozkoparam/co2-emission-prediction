@@ -83,7 +83,7 @@ rf.fit(X_train, y_train)
 y_pred = rf.predict(X_test)
 
 # Calculate performance metrics: RMSE and R² score
-rmse = mean_squared_error(y_test, y_pred, squared=False)
+rmse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 
 print(f"Root Mean Squared Error (RMSE): {rmse:.2f}")
